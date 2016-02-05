@@ -1,0 +1,1 @@
+<li><span class="num[field:global name=autoindex runphp='yes']@me=@me+1;[/field:global]">1</span><a href="/">[field:title/]</a></li>

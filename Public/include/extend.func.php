@@ -19,3 +19,39 @@ function litimgurls($imgid=0)
     //返回结果
     return $lit_imglist;
 }
+
+function getTypenameByTypeid($str){
+		switch($str){
+		case 2:
+			return '健身世界';
+			break;
+		case 3:
+			return '编程世界';
+			break;
+		case 4:
+			return '减脂专栏';
+			break;
+		case 5:
+			return '增肌专栏';
+			break;
+		case 6:
+			return '程序员专栏';
+			break;
+		case 7:
+			return 'php后端篇';
+			break;
+		case 8:
+			return '实用工具篇';
+			break;
+		case 9:
+			return '开发实战篇';
+			break;
+		case 10:
+			return '特殊人群';
+			break;
+		case 11:
+			return '其他语言篇';
+			break;
+
+	}
+}

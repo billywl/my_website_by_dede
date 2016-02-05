@@ -1,0 +1,1 @@
+<li><span class="num[field:global.autoindex/]"></span>[field:global name=autoindex runphp='yes']@me;[/field:global]<a href="/">[field:title/]</a></li>

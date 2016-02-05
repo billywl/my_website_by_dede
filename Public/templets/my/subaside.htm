@@ -1,0 +1,42 @@
+  <aside>
+    <div class="rnav">
+		{dede:channel type="son" row=4}
+	      <li class="rnav[field:global name=autoindex runphp='yes']@me=@me+1;[/field:global]"><a href="[field:typelink/]">[field:typename/]</a></li>
+		{/dede:channel}
+    </div>
+    <div class="ph_news">
+      <h2>
+        <p>点击排行</p>
+      </h2>
+      <ul class="ph_n">
+	  {dede:arclist channelid=1 row=5 orderby='click' }
+        <li><span class="num[field:global.autoindex/]">[field:global.autoindex/]</span><a href="[field:arcurl/]">[field:title/]</a></li>
+	  {/dede:arclist}
+
+      </ul>
+      <h2>
+        <p>栏目推荐</p>
+      </h2>
+      <ul>
+	  	{dede:arclist channelid=1 row=5 flag = 'c'  orderby='pubdate'}
+        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+		{/dede:arclist}
+      </ul>
+	      <div class="links">
+      <h2>
+        <p>友情链接</p>
+      </h2>
+      <ul>
+	    <li><a href="http://www.imooc.com/">慕课网</a></li>
+        <li><a href="http://www.yangqq.com/">杨青个人博客</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="copyright">
+      <ul>
+        <p> Design by 天启</a></p>
+        <p>备案号</p>
+        </p>
+      </ul>
+    </div>
+  </aside>

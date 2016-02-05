@@ -1,0 +1,1 @@
+<li><span class="num[field:global.autoindex/]">1</span><a href="/">[field:title/]</a></li>

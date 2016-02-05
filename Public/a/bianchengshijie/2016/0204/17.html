@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>15</title>
+<meta name="keywords" content="" />
+<meta name="description" content="15" />
+<link href="/templets/my/css/base.css" rel="stylesheet">
+<link href="/templets/my/css/style.css" rel="stylesheet">
+<link href="/templets/my/css/media.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="/templets/my/js/modernizr.js"></script>
+<![endif]-->
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=17">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=17";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+
+
+
+
+
+<body>
+<div class="ibody">
+  <header>
+    <h1>天启</h1>
+    <h2>fighting!!!.....</h2>
+    <div class="logo"><a href="/"></a></div>
+    <nav id="topnav"><a href="/">首页</a>
+	<a href="/a/jianshenshijie/list_2_1.html">健身世界</a>
+	<a href="/a/bianchengshijie/list_3_1.html">编程世界</a>
+	<a href="/a/gerenjianjie/">个人简介</a>
+	</nav>
+  </header>
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href='http://www.mynote.com/'>主页</a> > <a href='/a/bianchengshijie/list_3_1.html'>编程世界</a> > </h2>
+    <div class="index_about">
+      <h2 class="c_titile">15</h2>
+      <p class="box_c"><span class="d_time">发布时间：2016-02-04 19:04</span><span>作者：admin</span><span>浏览:<script src="/plus/count.php?view=yes&aid=17&mid=1" type='text/javascript' language="javascript"></script>次</span><span>来源:未知</span></p>
+
+      <ul class="infos">
+       15	
+      </ul>
+      <div class="keybq">
+        <p><span>关键字词</span>：</p>
+      </div>
+
+     
+      <div class="nextinfo">
+        <p>上一篇：<a href='/a/bianchengshijie/2016/0204/16.html'>14</a> </p>
+        <p>下一篇：<a href='/a/bianchengshijie/2016/0204/18.html'>16</a> </p>
+      </div>
+    </div>
+	<div class='rcode'>  <a href='http://2v.dedecms.com/' id='__dedeqrcode_17'>织梦二维码生成器</a>
+  <script type="text/javascript">
+  	var __dedeqrcode_id=17;
+  	var __dedeqrcode_aid=17;
+  	var __dedeqrcode_type='arc';
+  	var __dedeqrcode_dir='/plus';
+  </script>
+  <script language="javascript" type="text/javascript" src="/plus/img/qrcode.js"></script></div>
+  </article>
+
+  <aside>
+    <div class="rnav">
+		
+	      <li class="rnav1"><a href="/a/bianchengshijie/php/list_7_1.html">php后端篇</a></li>
+		
+	      <li class="rnav2"><a href="/a/bianchengshijie/java/list_8_1.html">实用工具篇</a></li>
+		
+	      <li class="rnav3"><a href="/a/bianchengshijie/qianduan/list_9_1.html">开发实战篇</a></li>
+		
+	      <li class="rnav4"><a href="/a/bianchengshijie/geleigongjupian/list_11_1.html">其他语言篇</a></li>
+		
+    </div>
+    <div class="ph_news">
+      <h2>
+        <p>点击排行</p>
+      </h2>
+      <ul class="ph_n">
+	  <li><span class="num1">1</span><a href="/a/bianchengshijie/2016/0204/16.html">14</a></li>
+<li><span class="num2">2</span><a href="/a/bianchengshijie/java/2016/0204/4.html">水电费</a></li>
+<li><span class="num3">3</span><a href="/a/bianchengshijie/2016/0204/13.html">11</a></li>
+<li><span class="num4">4</span><a href="/a/bianchengshijie/2016/0204/14.html">12</a></li>
+<li><span class="num5">5</span><a href="/a/bianchengshijie/2016/0204/18.html">16</a></li>
+
+
+      </ul>
+      <h2>
+        <p>栏目推荐</p>
+      </h2>
+      <ul>
+	  	<li><a href="/a/bianchengshijie/2016/0204/14.html">12</a></li>
+<li><a href="/a/bianchengshijie/2016/0204/16.html">14</a></li>
+
+      </ul>
+	      <div class="links">
+      <h2>
+        <p>友情链接</p>
+      </h2>
+      <ul>
+	    <li><a href="http://www.imooc.com/">慕课网</a></li>
+        <li><a href="http://www.yangqq.com/">杨青个人博客</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="copyright">
+      <ul>
+        <p> Design by 天启</a></p>
+        <p>备案号</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="/templets/my/js/silder.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+</html>

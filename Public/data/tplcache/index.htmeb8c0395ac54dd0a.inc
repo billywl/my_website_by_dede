@@ -17,12 +17,12 @@ $z[7]=Array("global","",806,838);
 $z[7][4]['name']="cfg_templets_skin";
 $z[8]=Array("include","",919,955);
 $z[8][4]['filename']="head.htm";
-$z[9]=Array("arclist","\r\n      <div class=\"blogs\">\r\n        <h3><a href=\"[field:arcurl/]\">[field:title/]</a></h3>\r\n        <figure><img src=\"[field:litpic/]\" ></figure>\r\n        <ul>\r\n          <p>[field:description/]</p>\r\n          <a href=\"[field:arcurl/]\" class=\"readmore\">阅读全文&gt;&gt;</a>\r\n        </ul>\r\n        <p class=\"autor\"><span>作者：[field:writer/]</span><span>分类：【<a href=\"/\">[field:typeid/]</a>】</span><span>浏览（<a href=\"/\">[field:click/]</a>）</span><span>来源（<a href=\"/\">[field:source/]</a>）</span></p>\r\n        <div class=\"dateview\">[field:senddate function=date(\"Y-m-d\",@me)/]梵蒂冈</div>\r\n      </div>\r\n	  ",1258,1945);
+$z[9]=Array("arclist","\r\n      <div class=\"blogs\">\r\n        <h3><a href=\"[field:arcurl/]\">[field:title/]</a></h3>\r\n        <figure><img src=\"[field:litpic/]\" ></figure>\r\n        <ul>\r\n          <p>[field:description/]</p>\r\n          <a href=\"[field:arcurl/]\" class=\"readmore\">阅读全文&gt;&gt;</a>\r\n        </ul>\r\n        <p class=\"autor\"><span>作者：[field:writer/]</span><span>分类：【<a href=\"/\">[field:typeid/]</a>】</span><span>浏览（<a href=\"/\">[field:click/]</a>）</span><span>来源（<a href=\"/\">[field:source/]</a>）</span></p>\r\n        <div class=\"dateview\">[field:senddate function=date(\"Y-m-d\",@me)/]</div>\r\n      </div>\r\n	  ",1258,1936);
 $z[9][4]['channelid']="1";
 $z[9][4]['row']="5";
-$z[10]=Array("include","",1977,2014);
+$z[10]=Array("include","",1968,2005);
 $z[10][4]['filename']="aside.htm";
-$z[11]=Array("global","",2031,2063);
+$z[11]=Array("global","",2022,2054);
 $z[11][4]['name']="cfg_templets_skin";
 
 ?>
