@@ -75,3 +75,15 @@ aside { width: 27%; background: url(../images/ibodybg.png) -170px -147px no-repe
 .rcode{
 	text-align:center;
 }
+
+.extend a{
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+
+}
+.extend {
+text-align:center;
+padding-top:5px;
+display:none;
+}
